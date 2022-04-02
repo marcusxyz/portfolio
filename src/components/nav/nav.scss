@@ -1,0 +1,21 @@
+@use "../../assets/styles/colors";
+@use "../../assets/styles/fonts";
+@use "../../assets/styles/media-queries";
+@use "../../assets/styles/mixin";
+
+nav {
+  background-color: colors.$white;
+
+  a {
+    font-size: fonts.$p;
+    color: colors.$black;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 2.5rem;
+  }
+}

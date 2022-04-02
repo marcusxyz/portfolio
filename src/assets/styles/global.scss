@@ -1,0 +1,17 @@
+@use "./colors";
+@use "./fonts";
+@use "./media-queries";
+@use "./mixin";
+
+@font-face {
+  font-family: "Diatype";
+  src: url(../fonts/ABCDiatype-Regular-Trial.woff2);
+}
+
+body {
+  font-family: Diatype;
+  a {
+    color: colors.$black;
+    text-decoration: none;
+  }
+}
