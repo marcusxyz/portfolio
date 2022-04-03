@@ -23,7 +23,7 @@ export default function Home() {
         />
         <section className="card-container">
           <Card
-            sector={["School project", "Web app"]}
+            topics={["School project", "Web app"]}
             languages={["php", "sqlite"]}
             title="Wunderlist"
             description="A simple todo list application that takes tasks submitted by user in a form and saves them in a SQLite database"
@@ -31,7 +31,7 @@ export default function Home() {
             imageAlt="Water plants illustration"
           />
           <Card
-            sector={["Concept", "School project"]}
+            topics={["Concept", "School project"]}
             languages={["Javascript", "HTML/CSS"]}
             title="Smoove"
             description="A simple todo list application that takes tasks submitted by user in a form and saves them in a SQLite database"

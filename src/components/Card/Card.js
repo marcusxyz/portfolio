@@ -1,13 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
 
 import "./card.scss"
 
 export default function Card({
   title,
   description,
-  sector,
+  topics,
   languages,
   image,
   imageAlt,
@@ -16,13 +15,19 @@ export default function Card({
     <div className="project-card">
       <div className="content">
         <div className="tags">
-          <div className="sector">
-            <li>{sector}</li>
+          <div className="topics">
+            <ul>
+              {topics.map((topic, key) => {
+                return <li key={key}>{topic}</li>
+              })}
+            </ul>
           </div>
           <div className="languages">
-            <li>
-              {languages.length} scoops: {languages.join(", ")}
-            </li>
+            <ul>
+              {languages.map((language, key) => {
+                return <li key={key}>{language}</li>
+              })}
+            </ul>
           </div>
         </div>
         <div className="info">
@@ -40,7 +45,7 @@ export default function Card({
 Card.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  sector: PropTypes.arrayOf(PropTypes.string).isRequired,
+  topics: PropTypes.arrayOf(PropTypes.string).isRequired,
   languages: PropTypes.arrayOf(PropTypes.string).isRequired,
   image: PropTypes.string.isRequired,
   imageAlt: PropTypes.string.isRequired,
