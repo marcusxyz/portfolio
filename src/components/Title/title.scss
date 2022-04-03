@@ -10,10 +10,10 @@
 }
 
 .hero {
-  padding: 7.5rem 2.5rem;
+  padding: 4rem 1rem;
 
   h1 {
-    font-size: fonts.$h1;
+    font-size: 9vw;
     margin: 0;
   }
 
@@ -43,5 +43,19 @@
         margin: 0;
       }
     }
+  }
+  @include media-queries.breakpoint(tablet) {
+    padding: 7.5rem 2.5rem;
+
+    h1 {
+      font-size: 7vw;
+    }
+  }
+
+  @include media-queries.breakpoint(desktop) {
+    // h1 {
+    //   font-size: 7vw;
+    //   margin: 0;
+    // }
   }
 }

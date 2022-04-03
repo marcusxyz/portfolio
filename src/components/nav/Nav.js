@@ -11,10 +11,10 @@ export default function Nav() {
           <Link to="/">Marcus Hägerstrand</Link>
         </div>
         <div className="externals">
-          <Link to="https://github.com/marcusxyz">
+          <a href="https://github.com/marcusxyz">
             Github
             <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_644_214)">
+              <g clipPath="url(#clip0_644_214)">
                 <path d="M1.27511 8.97938e-07L1.27511 1.24862L9.75627 1.24862L-4.34978e-08 11.0049L0.995113 12L10.7514 2.24468L10.7514 10.7258L12 10.7258L12 4.29138e-07L1.27511 8.97938e-07Z" />
               </g>
               <defs>
@@ -27,11 +27,11 @@ export default function Nav() {
                 </clipPath>
               </defs>
             </svg>
-          </Link>
-          <Link to="mailto:marcus.hagerstrand@gmail.com">
+          </a>
+          <a href="mailto:marcus.hagerstrand@gmail.com">
             Contact
             <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_644_214)">
+              <g clipPath="url(#clip0_644_214)">
                 <path d="M1.27511 8.97938e-07L1.27511 1.24862L9.75627 1.24862L-4.34978e-08 11.0049L0.995113 12L10.7514 2.24468L10.7514 10.7258L12 10.7258L12 4.29138e-07L1.27511 8.97938e-07Z" />
               </g>
               <defs>
@@ -44,7 +44,7 @@ export default function Nav() {
                 </clipPath>
               </defs>
             </svg>
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

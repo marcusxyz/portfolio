@@ -7,7 +7,7 @@ nav {
   background-color: colors.$white;
 
   a {
-    font-size: fonts.$p;
+    font-size: fonts.$p-small;
     color: colors.$black;
   }
 
@@ -16,22 +16,42 @@ nav {
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 2.5rem;
+    padding: 1.5rem 1rem;
 
     .externals {
       display: flex;
       flex-direction: row;
-      gap: 3rem;
+      gap: 2rem;
 
       a {
         display: flex;
         align-items: center;
         gap: 0.5rem;
+        &:hover {
+          opacity: 0.7;
+        }
         svg {
-          width: 15px;
+          width: 13px;
           height: auto;
           //   margin-left: 0.5rem;
           fill: colors.$black;
+        }
+      }
+    }
+  }
+  @include media-queries.breakpoint(tablet) {
+    a {
+      font-size: fonts.$p;
+    }
+    .links {
+      padding: 2.5rem;
+
+      .externals {
+        gap: 3rem;
+        a {
+          svg {
+            width: 15px;
+          }
         }
       }
     }
