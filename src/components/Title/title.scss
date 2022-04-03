@@ -1,0 +1,47 @@
+@use "../../assets/styles/colors";
+@use "../../assets/styles/fonts";
+@use "../../assets/styles/media-queries";
+@use "../../assets/styles/mixin";
+
+@keyframes status {
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero {
+  padding: 7.5rem 2.5rem;
+
+  h1 {
+    font-size: fonts.$h1;
+    margin: 0;
+  }
+
+  .status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+
+      span.circle {
+        display: inline-block;
+        width: 0.45rem;
+        height: 0.45rem;
+        border-radius: 2rem;
+        background-color: colors.$green;
+        animation: 1.125s status step-end 0s infinite;
+      }
+
+      p {
+        font-size: fonts.$p-small;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@use "../../assets/styles/colors";
+@use "../../assets/styles/fonts";
+@use "../../assets/styles/media-queries";
+@use "../../assets/styles/mixin";
+
+.section-title {
+  border-top: 1px solid colors.$black;
+  padding-bottom: 0.5rem;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2.5rem;
+
+    h4 {
+      width: 50%;
+      font-size: fonts.$h4;
+      margin: 1.5rem 0;
+      text-transform: uppercase;
+    }
+
+    p {
+      width: 50%;
+      font-size: fonts.$p;
+      margin: 1.5rem 0;
+      text-transform: none;
+      line-height: 1.5;
+    }
+  }
+}

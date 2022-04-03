@@ -17,5 +17,23 @@ nav {
     justify-content: space-between;
 
     padding: 2.5rem;
+
+    .externals {
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        svg {
+          width: 15px;
+          height: auto;
+          //   margin-left: 0.5rem;
+          fill: colors.$black;
+        }
+      }
+    }
   }
 }
