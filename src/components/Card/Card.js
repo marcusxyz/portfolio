@@ -10,10 +10,12 @@ export default function Card({
   languages,
   image,
   imageAlt,
+  isWhite,
 }) {
   return (
     <div className="project-card">
-      <div className="content">
+      <div style={{ color: isWhite ? "white" : "black" }} className="content">
+        {/* {isWhite ? "white" : "black"} */}
         <div className="tags">
           <div className="topics">
             <ul>
@@ -25,7 +27,17 @@ export default function Card({
           <div className="languages">
             <ul>
               {languages.map((language, key) => {
-                return <li key={key}>{language}</li>
+                return (
+                  <li
+                    style={{
+                      color: isWhite ? "white" : "black",
+                      border: isWhite ? "white" : "black",
+                    }}
+                    key={key}
+                  >
+                    {language}
+                  </li>
+                )
               })}
             </ul>
           </div>
@@ -49,4 +61,5 @@ Card.propTypes = {
   languages: PropTypes.arrayOf(PropTypes.string).isRequired,
   image: PropTypes.string.isRequired,
   imageAlt: PropTypes.string.isRequired,
+  isWhite: PropTypes.bool.isRequired,
 }

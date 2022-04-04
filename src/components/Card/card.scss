@@ -33,9 +33,14 @@
           li {
             font-size: fonts.$p-smaller;
             display: inline-block;
-            border: 1px solid colors.$black;
+            border: 1px solid;
             border-radius: 1.5rem;
             padding: 0.25rem 0.5rem;
+          }
+
+          li.white {
+            border: 1px solid colors.$black;
+            color: colors.$white;
           }
         }
       }

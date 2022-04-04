@@ -29,6 +29,7 @@ export default function Home() {
             description="A simple todo list application that takes tasks submitted by user in a form and saves them in a SQLite database"
             image={Wunderlist}
             imageAlt="Water plants illustration"
+            isWhite={false}
           />
           <Card
             topics={["Concept", "School project"]}
@@ -37,6 +38,7 @@ export default function Home() {
             description="A simple todo list application that takes tasks submitted by user in a form and saves them in a SQLite database"
             image={Smoove}
             imageAlt="Smoove car panel"
+            isWhite={true}
           />
         </section>
       </div>
