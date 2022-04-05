@@ -8,6 +8,10 @@
   src: url(../fonts/ABCDiatype-Regular-Trial.woff2);
 }
 
+html {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Diatype;
   a {
@@ -42,5 +46,6 @@ body {
   @include media-queries.breakpoint(tablet) {
     flex-direction: row;
     gap: 2.5rem;
+    flex-wrap: wrap;
   }
 }

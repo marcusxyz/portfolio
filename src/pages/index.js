@@ -7,6 +7,7 @@ import Card from "../components/Card/Card"
 // Project thumbnails
 import Wunderlist from "../assets/images/wunderlist-thumb.png"
 import Smoove from "../assets/images/smoove.webp"
+import PaulThom from "../assets/images/pot-thumb-min.webp"
 
 import "normalize.css"
 import "../assets/styles/global.scss"
@@ -38,6 +39,15 @@ export default function Home() {
             description="A simple todo list application that takes tasks submitted by user in a form and saves them in a SQLite database"
             image={Smoove}
             imageAlt="Smoove car panel"
+            isWhite={true}
+          />
+          <Card
+            topics={["Client work", "Wholesaler"]}
+            languages={["Web design", "Figma"]}
+            title="Paul & Thom"
+            description="Recipe focused website for all tapas and gourmet lovers"
+            image={PaulThom}
+            imageAlt="Two Paul & Thom products floating in the air"
             isWhite={true}
           />
         </section>

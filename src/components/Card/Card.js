@@ -14,8 +14,7 @@ export default function Card({
 }) {
   return (
     <div className="project-card">
-      <div style={{ color: isWhite ? "white" : "black" }} className="content">
-        {/* {isWhite ? "white" : "black"} */}
+      <div className={isWhite ? "content white" : "content"}>
         <div className="tags">
           <div className="topics">
             <ul>
@@ -29,10 +28,11 @@ export default function Card({
               {languages.map((language, key) => {
                 return (
                   <li
-                    style={{
-                      color: isWhite ? "white" : "black",
-                      border: isWhite ? "white" : "black",
-                    }}
+                    // style={{
+                    //   color: isWhite ? "white" : "black",
+                    //   border: isWhite ? "white" : "black",
+                    // }}
+                    className={isWhite ? "white" : ""}
                     key={key}
                   >
                     {language}
