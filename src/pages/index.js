@@ -8,6 +8,7 @@ import Card from "../components/Card/Card"
 import Wunderlist from "../assets/images/wunderlist-thumb.png"
 import Smoove from "../assets/images/smoove.webp"
 import PaulThom from "../assets/images/pot-thumb-min.webp"
+import HSB from "../assets/images/hsb-thumb-min.webp"
 
 import "normalize.css"
 import "../assets/styles/global.scss"
@@ -25,7 +26,7 @@ export default function Home() {
         <section className="card-container">
           <Card
             topics={["School project", "Web app"]}
-            languages={["php", "sqlite"]}
+            languages={["PHP", "SQLite"]}
             title="Wunderlist"
             description="A simple todo list application that takes tasks submitted by user in a form and saves them in a SQLite database"
             image={Wunderlist}
@@ -34,7 +35,7 @@ export default function Home() {
           />
           <Card
             topics={["Concept", "School project"]}
-            languages={["Javascript", "HTML/CSS"]}
+            languages={["JavaScript", "HTML/CSS"]}
             title="Smoove"
             description="A simple todo list application that takes tasks submitted by user in a form and saves them in a SQLite database"
             image={Smoove}
@@ -47,6 +48,15 @@ export default function Home() {
             title="Paul & Thom"
             description="Recipe focused website for all tapas and gourmet lovers"
             image={PaulThom}
+            imageAlt="Two Paul & Thom products floating in the air"
+            isWhite={true}
+          />
+          <Card
+            topics={["Client work", "Concert Hall"]}
+            languages={["Web design", "Figma"]}
+            title="Helsingborgs konserthus"
+            description="Recipe focused website for all tapas and gourmet lovers"
+            image={HSB}
             imageAlt="Two Paul & Thom products floating in the air"
             isWhite={true}
           />

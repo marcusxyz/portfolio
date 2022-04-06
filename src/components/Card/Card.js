@@ -14,42 +14,44 @@ export default function Card({
 }) {
   return (
     <div className="project-card">
-      <div className={isWhite ? "content white" : "content"}>
-        <div className="tags">
-          <div className="topics">
-            <ul>
-              {topics.map((topic, key) => {
-                return <li key={key}>{topic}</li>
-              })}
-            </ul>
+      <a href="#">
+        <div className={isWhite ? "content white" : "content"}>
+          <div className="tags">
+            <div className="topics bottom">
+              <ul>
+                {topics.map((topic, key) => {
+                  return <li key={key}>{topic}</li>
+                })}
+              </ul>
+            </div>
+            <div className="languages top">
+              <ul>
+                {languages.map((language, key) => {
+                  return (
+                    <li
+                      // style={{
+                      //   color: isWhite ? "white" : "black",
+                      //   border: isWhite ? "white" : "black",
+                      // }}
+                      className={isWhite ? "white" : ""}
+                      key={key}
+                    >
+                      {language}
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
           </div>
-          <div className="languages">
-            <ul>
-              {languages.map((language, key) => {
-                return (
-                  <li
-                    // style={{
-                    //   color: isWhite ? "white" : "black",
-                    //   border: isWhite ? "white" : "black",
-                    // }}
-                    className={isWhite ? "white" : ""}
-                    key={key}
-                  >
-                    {language}
-                  </li>
-                )
-              })}
-            </ul>
+          <div className="info">
+            <h4>{title}</h4>
+            <p>{description}</p>
           </div>
         </div>
-        <div className="info">
-          <h4>{title}</h4>
-          <p>{description}</p>
+        <div className="thumbnail">
+          <img src={image} alt={imageAlt} />
         </div>
-      </div>
-      <div className="thumbnail">
-        <img src={image} alt={imageAlt} />
-      </div>
+      </a>
     </div>
   )
 }

@@ -3,6 +3,15 @@
 @use "../../assets/styles/media-queries";
 @use "../../assets/styles/mixin";
 
+@keyframes slideDown {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
 .project-card {
   position: relative;
   // width: 100%;
@@ -10,7 +19,6 @@
   //   background-color: lightblue;
   overflow: hidden;
   border-radius: 0.5rem;
-  padding: 1.5rem;
 
   .content {
     position: absolute;
@@ -27,7 +35,32 @@
     .tags {
       height: auto;
       list-style: none;
+
+      .languages.top {
+        top: 2rem;
+        opacity: 0;
+        transition: all 0.3s ease-in;
+        transition-delay: 0.1s;
+      }
+
+      .topics.bottom {
+        top: 0rem;
+        opacity: 1;
+        transition: all 0.3s ease-in;
+        transition-delay: 0.2s;
+      }
+
+      .languages {
+        position: absolute;
+        transform: translateY(-52px);
+      }
+
       .topics {
+        position: absolute;
+      }
+
+      .topics,
+      .languages {
         ul {
           padding: 0;
           margin: 0;
@@ -41,17 +74,14 @@
           }
         }
       }
-
-      .languages {
-        display: none;
-      }
     }
   }
 
   .content.white {
     color: colors.$white;
     .tags {
-      .topics {
+      .topics,
+      .languages {
         ul {
           li {
             border: 1px solid colors.$white;
@@ -80,6 +110,8 @@
     top: 0;
     left: 0;
     z-index: -1;
+    transform: scale(1);
+    transition: transform 0.525s ease-in-out;
 
     img {
       width: 100%;
@@ -89,8 +121,32 @@
     }
   }
 
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    &:hover {
+      .tags {
+        .languages.top {
+          top: 3.2rem;
+          opacity: 1;
+          transition-delay: 0.1s;
+        }
+        .topics.bottom {
+          top: 1.5rem;
+          opacity: 0;
+          transition-delay: 0s;
+        }
+      }
+
+      .thumbnail {
+        transform: scale(1.015);
+      }
+    }
+  }
+
   @include media-queries.breakpoint(tablet) {
-    width: calc(50% - 4.25rem);
+    width: calc(50% - 1.25rem);
     height: 50vw;
   }
 }
