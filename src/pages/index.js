@@ -29,6 +29,7 @@ export default function Home() {
             languages={["PHP", "SQLite"]}
             title="Wunderlist"
             description="A simple todo list application that takes tasks submitted by user in a form and saves them in a SQLite database"
+            buttonText="View project on GitHub"
             image={Wunderlist}
             imageAlt="Water plants illustration"
             isWhite={false}
@@ -37,7 +38,8 @@ export default function Home() {
             topics={["Concept", "School project"]}
             languages={["JavaScript", "HTML/CSS"]}
             title="Smoove"
-            description="A simple todo list application that takes tasks submitted by user in a form and saves them in a SQLite database"
+            description="Landing page concept for a futuristic car"
+            buttonText="View website"
             image={Smoove}
             imageAlt="Smoove car panel"
             isWhite={true}
@@ -47,17 +49,18 @@ export default function Home() {
             languages={["Web design", "Figma"]}
             title="Paul & Thom"
             description="Recipe focused website for all tapas and gourmet lovers"
+            buttonText="View website"
             image={PaulThom}
             imageAlt="Two Paul & Thom products floating in the air"
             isWhite={true}
           />
           <Card
             topics={["Client work", "Concert Hall"]}
-            languages={["Web design", "Figma"]}
+            languages={["Web design", "Sketch"]}
             title="Helsingborgs konserthus"
-            description="Recipe focused website for all tapas and gourmet lovers"
+            description="Redesigned ticket listing and concert information for an overall improved user experience"
             image={HSB}
-            imageAlt="Two Paul & Thom products floating in the air"
+            imageAlt="View of ticket page for Helsingborgs konserthus with a blurred background"
             isWhite={true}
           />
         </section>

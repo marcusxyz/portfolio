@@ -92,6 +92,33 @@
     }
   }
 
+  .button {
+    display: flex;
+    justify-content: center;
+    button {
+      opacity: 0;
+      background-color: colors.$white;
+      border: none;
+      border-radius: 2rem;
+      padding: 1.5rem;
+      transition: opacity 0.3s;
+
+      .button-content {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          font-size: fonts.$p;
+        }
+      }
+      &:hover {
+      }
+    }
+  }
+
   .info {
     h4 {
       font-size: fonts.$h3;
@@ -137,6 +164,10 @@
           opacity: 0;
           transition-delay: 0s;
         }
+      }
+
+      button {
+        opacity: 1;
       }
 
       .thumbnail {
