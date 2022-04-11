@@ -64,7 +64,7 @@ export default function Home() {
             languages={["Web design & development", "Figma", "PHP"]}
             title="Berzelii Gallery Dept"
             description="As a way to practice fundamental PHP I developed an art gallery page showcasing various art."
-            link="https://marcushagerstrand.com/fine-art-gallery//"
+            link="https://marcushagerstrand.com/fine-art-gallery"
             buttonText="View website"
             image={Gallery}
             imageAlt="Night with her Train of Stars, 1912 The painting's title is derived from W. E Henley's (1849-1903) poem 'Margaritae Sorori' (Translates as 'Sister Margaret') Artist: E.R.Hughes (Edward Robert Hughes)"
@@ -93,6 +93,37 @@ export default function Home() {
             isWhite={true}
           />
         </section>
+        <SectionTitle
+          title="About me"
+          text={
+            <>
+              A creative UI Designer and developer student with a passion for
+              design, animation, interaction, problem-solving, and for mastering
+              the latest front-end technologies.
+              <br />
+              <br />
+              I'm currently studying at{" "}
+              <a class="link" href="https://yrgo.se">
+                Yrgo
+              </a>{" "}
+              to hopefully make use of my UI/UX knowledge in the coding world
+              and most importantly, to encourage good cooperation and
+              communication between designers and developers.
+              <br />
+              <br />
+              Outside of work, I enjoy jogging in the woods, casual gaming and
+              taking care of my house plants. 🪴
+              <br />
+              <br />
+              <a
+                class="link"
+                href="https://marcushagerstrand.com/documents/CV.pdf"
+              >
+                View Resumé
+              </a>
+            </>
+          }
+        />
       </div>
     </main>
   )
