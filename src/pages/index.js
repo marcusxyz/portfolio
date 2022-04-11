@@ -29,6 +29,7 @@ export default function Home() {
             languages={["PHP", "SQLite"]}
             title="Wunderlist"
             description="A simple todo list application that takes tasks submitted by user in a form and saves them in a SQLite database"
+            link="https://github.com/marcusxyz/wunderlist"
             buttonText="View project on GitHub"
             image={Wunderlist}
             imageAlt="Water plants illustration"
@@ -39,6 +40,7 @@ export default function Home() {
             languages={["JavaScript", "HTML/CSS"]}
             title="Smoove"
             description="Landing page concept for a futuristic car"
+            link="https://smoovepioneer.netlify.app/"
             buttonText="View website"
             image={Smoove}
             imageAlt="Smoove car panel"
@@ -59,6 +61,7 @@ export default function Home() {
             languages={["Web design", "Sketch"]}
             title="Helsingborgs konserthus"
             description="Redesigned ticket listing and concert information for an overall improved user experience"
+            buttonText="View website"
             image={HSB}
             imageAlt="View of ticket page for Helsingborgs konserthus with a blurred background"
             isWhite={true}

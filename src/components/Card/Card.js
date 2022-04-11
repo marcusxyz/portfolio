@@ -6,6 +6,7 @@ import "./card.scss"
 export default function Card({
   title,
   description,
+  link,
   topics,
   languages,
   buttonText,
@@ -15,7 +16,7 @@ export default function Card({
 }) {
   return (
     <div className="project-card">
-      <a href="#">
+      <a href={link} rel="external">
         <div className={isWhite ? "content white" : "content"}>
           <div className="tags">
             <div className="topics bottom">
@@ -83,6 +84,7 @@ export default function Card({
 Card.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
   topics: PropTypes.arrayOf(PropTypes.string).isRequired,
   languages: PropTypes.arrayOf(PropTypes.string).isRequired,
   buttonText: PropTypes.string.isRequired,
