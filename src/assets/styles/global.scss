@@ -11,13 +11,17 @@
 html {
   box-sizing: border-box;
   background-color: colors.$white;
+  font-family: Diatype;
 }
 
 body {
-  font-family: Diatype;
   a {
     color: colors.$black;
     text-decoration: none;
+  }
+
+  main {
+    background-color: colors.$white;
   }
 
   h1,
@@ -69,6 +73,7 @@ a.link {
   justify-content: space-between;
   gap: 1.5rem;
   margin: 3rem 0 8rem 0;
+  background-color: colors.$white;
 
   @include media-queries.breakpoint(tablet) {
     flex-direction: row;
