@@ -30,14 +30,7 @@ export default function Card({
               <ul>
                 {languages.map((language, key) => {
                   return (
-                    <li
-                      // style={{
-                      //   color: isWhite ? "white" : "black",
-                      //   border: isWhite ? "white" : "black",
-                      // }}
-                      className={isWhite ? "white" : ""}
-                      key={key}
-                    >
+                    <li className={isWhite ? "white" : ""} key={key}>
                       {language}
                     </li>
                   )
@@ -54,13 +47,13 @@ export default function Card({
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#a)" fill="#000">
+                  <g clip-path="url(#a)">
                     <path d="M0 7h16v2H0z" />
                     <path d="M7 16V0h2v16z" />
                   </g>
                   <defs>
                     <clipPath id="a">
-                      <path fill="#fff" d="M0 0h16v16H0z" />
+                      <path d="M0 0h16v16H0z" />
                     </clipPath>
                   </defs>
                 </svg>
