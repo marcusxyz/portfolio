@@ -1,5 +1,4 @@
 import React from "react"
-
 import "./cardList.scss"
 
 // Project thumbnails

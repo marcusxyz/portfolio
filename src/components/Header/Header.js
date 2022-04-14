@@ -1,11 +1,12 @@
 import { Link } from "gatsby"
 import React from "react"
+import Proptypes from "prop-types"
 
 import "./nav.scss"
 
-export default function Nav() {
+const Header = ({ siteName }) => {
   return (
-    <nav>
+    <header>
       <div className="links">
         <div className="logo">
           <Link to="/">Marcus Hägerstrand</Link>
@@ -47,6 +48,12 @@ export default function Nav() {
           </a>
         </div>
       </div>
-    </nav>
+    </header>
   )
 }
+
+Header.propTypes = {
+  siteName: Proptypes.string.isRequired,
+}
+
+export default Header

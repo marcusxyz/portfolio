@@ -1,0 +1,9 @@
+@use "../../assets/styles/media-queries";
+
+.wrapper {
+  margin: 0 1rem 6rem 1rem;
+
+  @include media-queries.breakpoint(tablet) {
+    margin: 0 2.5rem 6rem 2.5rem;
+  }
+}
