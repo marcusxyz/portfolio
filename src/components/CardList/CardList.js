@@ -52,7 +52,7 @@ const Cards = [
     id: 4,
     title: "Berzelii Gallery Dept",
     description:
-      "As a way to practice fundamental PHP I developed an art gallery page showcasing various art.",
+      "As a way to practice fundamental PHP I developed an art gallery page showcasing various art",
     link: "https://marcushagerstrand.com/fine-art-gallery",
     buttonText: "View website",
     image: Gallery,
@@ -72,7 +72,7 @@ const Cards = [
     image: Helsingborg,
     imageAlt:
       "View of ticket page for Helsingborgs konserthus with a blurred background",
-    topics: ["Client work", "Concert Hall"],
+    topics: ["Client work", "Concert hall"],
     languages: ["Web design", "Sketch"],
     isWhite: true,
   },

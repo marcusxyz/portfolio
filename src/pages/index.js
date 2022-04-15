@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
+import Seo from "../components/Seo/Seo"
 import Title from "../components/Title/Title"
 import SectionTitle from "../components/SectionTitle/SectionTitle"
 import CardList from "../components/CardList/CardList"
@@ -11,6 +12,11 @@ export default function Home() {
   return (
     <div>
       <Layout>
+        <Seo
+          title="UI Designer & Developer"
+          description="I'm Marcus Hägerstrand, a UI/UX Designer and developer with a passion for
+          simplistic, user-friendly design and animations"
+        />
         <Title />
         <SectionTitle
           title="Selected projects"

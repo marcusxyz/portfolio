@@ -7,7 +7,7 @@ import "./layout.scss"
 const Layout = ({ children }) => {
   return (
     <div>
-      <Header siteName="Marcus Hägerstrands portfolio" />
+      <Header siteName="Marcus Hägerstrand" />
       <div className="wrapper">{children}</div>
       <Footer />
     </div>

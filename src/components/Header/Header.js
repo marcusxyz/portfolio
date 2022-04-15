@@ -9,7 +9,7 @@ const Header = ({ siteName }) => {
     <header>
       <div className="links">
         <div className="logo">
-          <Link to="/">Marcus Hägerstrand</Link>
+          <Link to="/">{siteName}</Link>
         </div>
         <div className="externals">
           <a href="https://github.com/marcusxyz">

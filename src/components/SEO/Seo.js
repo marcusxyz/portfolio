@@ -19,14 +19,18 @@ const Seo = ({ description, lang, meta, title }) => {
             title
             description
             author
+            keywords
+            image
           }
         }
       }
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const metaDescription = description || site.siteMetadata.description
+  const keywords = site.siteMetadata.keywords
+  const image = site.siteMetadata.image
 
   return (
     <Helmet
@@ -34,11 +38,15 @@ const Seo = ({ description, lang, meta, title }) => {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={defaultTitle ? `${defaultTitle} — %s` : null}
       meta={[
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: `keywords`,
+          content: keywords,
         },
         {
           property: `og:title`,
@@ -53,8 +61,16 @@ const Seo = ({ description, lang, meta, title }) => {
           content: `website`,
         },
         {
+          property: `image`,
+          content: image,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
+        },
+        {
+          name: `twitter:image`,
+          content: image,
         },
         {
           name: `twitter:creator`,
@@ -81,6 +97,7 @@ Seo.defaultProps = {
 
 Seo.propTypes = {
   description: PropTypes.string,
+  image: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
