@@ -1,13 +1,7 @@
 import React from "react"
-import "./cardList.scss"
+import { StaticImage } from "gatsby-plugin-image"
 
-// Project thumbnails
-import Wunderlist from "../../assets/images/wunderlist-thumb.png"
-import Kiviks from "../../assets/images/kiviks-thumb-min.webp"
-import Smoove from "../../assets/images/smoove.webp"
-import Gallery from "../../assets/images/berzelli-thumb-min.webp"
-import Helsingborg from "../../assets/images/hsb-thumb-min.webp"
-import Aesop from "../../assets/images/aesop-thumb-min.webp"
+import "./cardList.scss"
 
 const Cards = [
   {
@@ -17,8 +11,13 @@ const Cards = [
       "A simple todo list application that takes tasks submitted by user in a form and saves them in a SQLite database",
     link: "https://github.com/marcusxyz/wunderlist",
     buttonText: "View project on GitHub",
-    image: Wunderlist,
-    imageAlt: "Water plants illustration",
+    image: (
+      <StaticImage
+        src="../../assets/images/01-wunderlist-thumb.png"
+        alt="Water plants illustration"
+        placeholder="blurred"
+      />
+    ),
     topics: ["School project", "CRUD app"],
     languages: ["PHP", "SQLite"],
     isWhite: false,
@@ -30,8 +29,13 @@ const Cards = [
       "Help showcase a wide range of products for a beverage company",
     link: "https://www.kiviksmusteri.se/",
     buttonText: "View website",
-    image: Kiviks,
-    imageAlt: "A product display on Kiviks website with a blurred background",
+    image: (
+      <StaticImage
+        src="../../assets/images/02-kiviks-thumb-min.webp"
+        alt="A product display on Kiviks website with a blurred background"
+        placeholder="blurred"
+      />
+    ),
     topics: ["Client work", "Cider mill"],
     languages: ["Web design", "Figma"],
     isWhite: true,
@@ -42,8 +46,13 @@ const Cards = [
     description: "Landing page concept for a futuristic car",
     link: "https://smoovepioneer.netlify.app/",
     buttonText: "View website",
-    image: Smoove,
-    imageAlt: "Smoove car panel",
+    image: (
+      <StaticImage
+        src="../../assets/images/03-smoove-thumb-min.webp"
+        alt="Smoove car panel"
+        placeholder="blurred"
+      />
+    ),
     topics: ["School project", "Automotive company"],
     languages: ["HTML/CSS", "JavaScript"],
     isWhite: true,
@@ -55,9 +64,13 @@ const Cards = [
       "As a way to practice fundamental PHP I developed an art gallery page showcasing various art",
     link: "https://marcushagerstrand.com/fine-art-gallery",
     buttonText: "View website",
-    image: Gallery,
-    imageAlt:
-      "Night with her Train of Stars, 1912 The painting's title is derived from W. E Henley's (1849-1903) poem 'Margaritae Sorori' (Translates as 'Sister Margaret') Artist: E.R.Hughes (Edward Robert Hughes)",
+    image: (
+      <StaticImage
+        src="../../assets/images/04-gallery-thumb-min.webp"
+        alt="Night with her Train of Stars, 1912 The painting's title is derived from W. E Henley's (1849-1903) poem 'Margaritae Sorori' (Translates as 'Sister Margaret') Artist: E.R.Hughes (Edward Robert Hughes)"
+        placeholder="blurred"
+      />
+    ),
     topics: ["School project", "Art gallery"],
     languages: ["Web design & development", "Figma", "PHP"],
     isWhite: true,
@@ -69,9 +82,13 @@ const Cards = [
       "Redesigned ticket listing and concert information for an overall improved user experience",
     link: "https://helsingborgskonserthus.se/sok-evenemang/",
     buttonText: "View website",
-    image: Helsingborg,
-    imageAlt:
-      "View of ticket page for Helsingborgs konserthus with a blurred background",
+    image: (
+      <StaticImage
+        src="../../assets/images/05-hsb-thumb-min.webp"
+        alt="View of ticket page for Helsingborgs konserthus with a blurred background"
+        placeholder="blurred"
+      />
+    ),
     topics: ["Client work", "Concert hall"],
     languages: ["Web design", "Sketch"],
     isWhite: true,
@@ -82,8 +99,13 @@ const Cards = [
     description: "Designed and developed a landing page concept for Aesop",
     link: "https://github.com/amandahulten/Landing-page",
     buttonText: "View project on Github",
-    image: Aesop,
-    imageAlt: "Outside view of a Aesop shop",
+    image: (
+      <StaticImage
+        src="../../assets/images/06-aesop-thumb-min.webp"
+        alt="Outside view of a Aesop shop"
+        placeholder="blurred"
+      />
+    ),
     topics: ["School project", "Beauty supply store"],
     languages: ["Figma", "HTML/CSS", "JavaScript"],
     isWhite: true,
@@ -145,9 +167,7 @@ const CardsListItem = props => {
             <p>{props.card.description}</p>
           </div>
         </div>
-        <div className="thumbnail">
-          <img src={props.card.image} alt={props.card.imageAlt} />
-        </div>
+        <div className="thumbnail">{props.card.image}</div>
       </a>
     </div>
   )
