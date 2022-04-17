@@ -18,8 +18,11 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-mdx`,
     `gatsby-plugin-netlify`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,6 +35,13 @@ module.exports = {
       options: {
         name: `pages`,
         path: `${__dirname}/src/pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `home`,
+        path: `${__dirname}/content/home`,
       },
     },
   ],

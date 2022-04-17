@@ -1,4 +1,6 @@
 import React from "react"
+import { graphql } from "gatsby"
+
 import Layout from "../components/Layout/Layout"
 import Seo from "../components/Seo/Seo"
 import Title from "../components/Title/Title"
@@ -8,7 +10,8 @@ import CardList from "../components/CardList/CardList"
 import "normalize.css"
 import "../assets/styles/global.scss"
 
-export default function Home() {
+export default function Home({ data }) {
+  console.log("We got data: ", data)
   return (
     <div>
       <Layout>
@@ -58,3 +61,14 @@ export default function Home() {
     </div>
   )
 }
+
+export const query = graphql`
+  {
+    allFile(filter: { extension: { eq: "md" }, dir: {} }) {
+      nodes {
+        id
+        name
+      }
+    }
+  }
+`
