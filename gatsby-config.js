@@ -10,7 +10,7 @@ module.exports = {
     description: `A creative UI Designer and developer student with a passion for simplistic design, animation, problem-solving, and for mastering the latest front-end technologies.`,
     author: `Marcus Hägerstrand <marcus.hagerstrand@gmail.com>`,
     keywords: `developer, ui designer, ux designer, gothenburg, marcus hägerstrand`,
-    image: `src/assets/images/banner.webp`,
+    image: `/images/banner.webp`,
   },
   /* Your site config here */
   plugins: [
