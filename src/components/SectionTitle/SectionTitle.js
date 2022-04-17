@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import "./SectionTitle.scss"
+import "./sectionTitle.scss"
 
-export default function SectionTitle({ title, text }) {
+const SectionTitle = ({ title, text }) => {
   return (
     <div className="section-title">
       <div>
@@ -13,6 +13,8 @@ export default function SectionTitle({ title, text }) {
     </div>
   )
 }
+
+export default SectionTitle
 
 SectionTitle.propTypes = {
   title: PropTypes.string,
