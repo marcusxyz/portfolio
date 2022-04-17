@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
-    <img alt="showcase of previous work" src="./src/assets/images/banner.webp" width="100%" />
+    <img alt="showcase of previous work" src="./src/assets/images/banner.png" width="100%" />
   </a>
 </p>
 <br>
