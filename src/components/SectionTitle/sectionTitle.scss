@@ -16,6 +16,9 @@
       width: 100%;
       font-size: fonts.$h4;
       font-weight: normal;
+      letter-spacing: -0.02em;
+      white-space: pre-line;
+      hyphens: none;
       margin: 1.5rem 0 0.5rem 0;
       text-transform: uppercase;
     }

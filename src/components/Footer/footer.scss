@@ -24,8 +24,11 @@ footer {
       .group {
         h4 {
           font-size: fonts.$p;
+          font-weight: normal;
+          letter-spacing: -0.02em;
+          white-space: pre-line;
+          hyphens: none;
           margin-bottom: 1rem;
-          font-weight: bold;
         }
       }
 
@@ -39,6 +42,10 @@ footer {
         li {
           a {
             font-size: fonts.$h4;
+            font-weight: normal;
+            letter-spacing: -0.02em;
+            white-space: pre-line;
+            hyphens: none;
             margin: 0;
             text-transform: none;
             line-height: 1.5;
@@ -48,7 +55,9 @@ footer {
     }
     .footer-title {
       font-size: fonts.$h3;
-      font-weight: bold;
+      font-weight: normal;
+      letter-spacing: -0.04em;
+      white-space: pre-line;
     }
   }
 
