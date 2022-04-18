@@ -55,7 +55,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
         {
           property: `image`,
-          content: `https://portfolio-marcusxyz.netlify.app/${ogImage}`,
+          content: `https://portfolio-marcusxyz.netlify.app${ogImage}`,
         },
         {
           name: `twitter:card`,
@@ -63,7 +63,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:image`,
-          content: `https://portfolio-marcusxyz.netlify.app/${ogImage}`,
+          content: `https://portfolio-marcusxyz.netlify.app${ogImage}`,
         },
         {
           name: `twitter:creator`,
