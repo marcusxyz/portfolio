@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import ogImage from "../../../static/banner.png"
 
 const Seo = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
@@ -23,7 +24,6 @@ const Seo = ({ description, lang, meta, title }) => {
   const defaultTitle = site.siteMetadata?.title
   const metaDescription = description || site.siteMetadata.description
   const keywords = site.siteMetadata.keywords
-  const image = site.siteMetadata.image
 
   return (
     <Helmet
@@ -55,7 +55,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
         {
           property: `image`,
-          content: image,
+          content: `https://portfolio-marcusxyz.netlify.app/${ogImage}`,
         },
         {
           name: `twitter:card`,
@@ -63,7 +63,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:image`,
-          content: image,
+          content: `https://portfolio-marcusxyz.netlify.app/${ogImage}`,
         },
         {
           name: `twitter:creator`,

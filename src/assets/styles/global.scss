@@ -12,6 +12,7 @@ html {
   box-sizing: border-box;
   background-color: colors.$white;
   font-family: Diatype, sans-serif;
+  font-weight: normal;
 }
 
 body {
@@ -56,20 +57,5 @@ a.link {
       transform-origin: right;
       transform: scaleX(0);
     }
-  }
-}
-
-.card-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1.5rem;
-  margin: 3rem 0 8rem 0;
-  background-color: colors.$white;
-
-  @include media-queries.breakpoint(tablet) {
-    flex-direction: row;
-    gap: 2.5rem;
-    flex-wrap: wrap;
   }
 }

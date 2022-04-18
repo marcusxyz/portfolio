@@ -10,8 +10,7 @@ import CardList from "../components/CardList/CardList"
 import "normalize.css"
 import "../assets/styles/global.scss"
 
-export default function Home({ data }) {
-  console.log("We got data: ", data)
+const Home = () => {
   return (
     <div>
       <Layout>
@@ -61,6 +60,8 @@ export default function Home({ data }) {
     </div>
   )
 }
+
+export default Home
 
 export const query = graphql`
   {
