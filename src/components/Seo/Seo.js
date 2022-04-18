@@ -54,7 +54,7 @@ const Seo = ({ description, lang, meta, title }) => {
           content: `website`,
         },
         {
-          property: `image`,
+          property: `og:image`,
           content: `https://portfolio-marcusxyz.netlify.app${ogImage}`,
         },
         {
