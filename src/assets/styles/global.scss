@@ -14,9 +14,6 @@ html {
   font-family: Diatype, sans-serif;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
-  // Rounded borders for Safari
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
 }
 
 body {

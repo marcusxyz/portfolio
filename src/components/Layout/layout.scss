@@ -2,6 +2,7 @@
 
 .wrapper {
   margin: 0 1rem 6rem 1rem;
+  min-height: 45vh;
 
   @include media-queries.breakpoint(tablet) {
     margin: 0 2.5rem 6rem 2.5rem;

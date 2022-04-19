@@ -12,7 +12,7 @@ const Footer = () => {
             <ul>
               <li>
                 <a className="link" href="mailto:marcus.hagerstrand@gmail.com">
-                  hello@marcus.com
+                  Say hi
                 </a>
               </li>
               <li>
