@@ -62,8 +62,8 @@ const Cards = [
     title: "Berzelii Gallery Dept",
     description:
       "As a way to practice fundamental PHP I developed an art gallery page showcasing various art",
-    link: "https://marcushagerstrand.com/fine-art-gallery",
-    buttonText: "View website",
+    link: "https://github.com/marcusxyz/fine-art-gallery",
+    buttonText: "View project on Github",
     image: (
       <StaticImage
         src="../../assets/images/04-gallery-thumb-min.webp"

@@ -45,14 +45,6 @@ const Home = () => {
               <br />
               Outside of work, I enjoy jogging in the woods, casual gaming and
               taking care of my house plants. 🪴
-              <br />
-              <br />
-              <a
-                className="link"
-                href="https://marcushagerstrand.com/documents/CV.pdf"
-              >
-                View Resumé
-              </a>
             </>
           }
         />
