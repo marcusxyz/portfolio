@@ -9,4 +9,4 @@
   Portfolio
 </h1>
 
-WIP portfolio built with React and Gatsby.
+WIP portfolio built with React and Gatsby. Check it out [here](https://marcushagerstrand.com)
