@@ -1,5 +1,4 @@
 import React from "react"
-import { graphql } from "gatsby"
 
 import Layout from "../components/Layout/Layout"
 import Seo from "../components/Seo/Seo"
@@ -54,14 +53,3 @@ const Home = () => {
 }
 
 export default Home
-
-export const query = graphql`
-  {
-    allFile(filter: { extension: { eq: "md" }, dir: {} }) {
-      nodes {
-        id
-        name
-      }
-    }
-  }
-`

@@ -6,6 +6,24 @@ import "./cardList.scss"
 const Cards = [
   {
     id: 1,
+    title: "Yum Yum",
+    description:
+      "Developed a simple restaurant website powered by Contentful API",
+    link: "https://github.com/marcusxyz/yumyum",
+    buttonText: "View project on Github",
+    image: (
+      <StaticImage
+        src="../../assets/images/06-yumyum-min.webp"
+        alt="Restaurant during rush hour"
+        placeholder="blurred"
+      />
+    ),
+    topics: ["School project", "Ramen shop"],
+    languages: ["React", "Contentful", "Styled-components"],
+    isWhite: true,
+  },
+  {
+    id: 2,
     title: "Wunderlist",
     description:
       "A simple todo list application that takes tasks submitted by user in a form and saves them in a SQLite database",
@@ -23,7 +41,7 @@ const Cards = [
     isWhite: false,
   },
   {
-    id: 2,
+    id: 3,
     title: "Kiviks Musteri",
     description:
       "Help showcase a wide range of products for a beverage company",
@@ -38,23 +56,6 @@ const Cards = [
     ),
     topics: ["Client work", "Cider mill"],
     languages: ["Web design", "Figma"],
-    isWhite: true,
-  },
-  {
-    id: 3,
-    title: "Smoove",
-    description: "Landing page concept for a futuristic car",
-    link: "https://smoovepioneer.netlify.app/",
-    buttonText: "View website",
-    image: (
-      <StaticImage
-        src="../../assets/images/03-smoove-thumb-min.webp"
-        alt="Smoove car panel"
-        placeholder="blurred"
-      />
-    ),
-    topics: ["School project", "Automotive company"],
-    languages: ["HTML/CSS", "JavaScript"],
     isWhite: true,
   },
   {
@@ -95,24 +96,22 @@ const Cards = [
   },
   {
     id: 6,
-    title: "Aesop",
-    description: "Designed and developed a landing page concept for Aesop",
-    link: "https://github.com/amandahulten/Landing-page",
-    buttonText: "View project on Github",
+    title: "Smoove",
+    description: "Landing page concept for a futuristic car",
+    link: "https://smoovepioneer.netlify.app/",
+    buttonText: "View website",
     image: (
       <StaticImage
-        src="../../assets/images/06-aesop-thumb-min.webp"
-        alt="Outside view of a Aesop shop"
+        src="../../assets/images/03-smoove-thumb-min.webp"
+        alt="Smoove car panel"
         placeholder="blurred"
       />
     ),
-    topics: ["School project", "Beauty supply store"],
-    languages: ["Figma", "HTML/CSS", "JavaScript"],
+    topics: ["School project", "Automotive company"],
+    languages: ["HTML/CSS", "JavaScript"],
     isWhite: true,
   },
 ]
-
-// console.log(Cards)
 
 const CardsListItem = props => {
   return (
