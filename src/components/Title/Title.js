@@ -9,7 +9,7 @@ export default function Title() {
       <div className="status">
         <div>
           <span className="circle"></span>
-          <p className="status">Available for internship</p>
+          <p className="status">Available for projects</p>
         </div>
       </div>
     </div>
