@@ -1,4 +1,5 @@
 import React from "react"
+import { Fade } from "react-reveal"
 import { StaticImage } from "gatsby-plugin-image"
 
 import "./cardList.scss"
@@ -174,11 +175,13 @@ const CardsListItem = props => {
 
 const CardList = () => {
   return (
-    <section className="card-container">
-      {Cards.map(card => {
-        return <CardsListItem card={card} key={card.id} />
-      })}
-    </section>
+    <Fade>
+      <section className="card-container">
+        {Cards.map(card => {
+          return <CardsListItem card={card} key={card.id} />
+        })}
+      </section>
+    </Fade>
   )
 }
 
