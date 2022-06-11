@@ -26,6 +26,7 @@ body {
     background-color: colors.$white;
   }
 
+  // Fixes flickering issue for react-reveal
   .react-reveal {
     opacity: 0;
   }
