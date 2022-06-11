@@ -8,6 +8,9 @@ import CardList from "../components/CardList/CardList"
 
 import "normalize.css"
 import "../assets/styles/global.scss"
+import config from "react-reveal/globals"
+
+config({ ssrFadeout: true })
 
 const Home = () => {
   return (
