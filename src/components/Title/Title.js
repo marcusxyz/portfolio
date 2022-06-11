@@ -1,17 +1,22 @@
 import React from "react"
+import { Fade } from "react-reveal"
 
 import "./title.scss"
 
 export default function Title() {
   return (
     <div className="hero">
-      <h1>UI designer & Developer student based in Gothenburg</h1>
-      <div className="status">
-        <div>
-          <span className="circle"></span>
-          <p className="status">Available for projects</p>
+      <Fade top distance="32px" ssrFadeout>
+        <h1>UI designer & Developer student based in Gothenburg</h1>
+      </Fade>
+      <Fade top distance="8px" delay={200} ssrFadeout>
+        <div className="status">
+          <div>
+            <span className="circle"></span>
+            <p className="status">Available for projects</p>
+          </div>
         </div>
-      </div>
+      </Fade>
     </div>
   )
 }

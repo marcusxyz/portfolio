@@ -16,7 +16,7 @@ const Home = () => {
         <Seo
           title="UI Designer & Developer"
           description="I'm Marcus Hägerstrand, a UI/UX Designer and developer with a passion for
-          simplistic, user-friendly design and animations"
+            simplistic, user-friendly design and animations"
         />
         <Title />
         <SectionTitle
